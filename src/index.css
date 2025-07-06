@@ -45,3 +45,20 @@ a.target img{
     flex-direction: row;
     gap: 5px;
 }
+
+.centered{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centered a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #121212;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 0.8rem;
+}

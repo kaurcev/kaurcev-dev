@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/header/comp";
 import Footer from "../../components/footer/comp";
 import Tg from '../../img/tg.svg';
 import github from '../../img/github.svg';
 
 import { Link } from "react-router-dom";
+import { useAppContext } from "../../Application";
 
-export default function HomeView(){    
+export default function HomeView(){   
+    const {setTitle} = useAppContext();
+    useEffect(()=>{
+        setTitle("Добро пожаловать!")
+    }, [setTitle]) 
     return (
         <>
         <Header />
@@ -26,6 +31,7 @@ export default function HomeView(){
                 <h2>Профессиональный профиль</h2>
                 
                 <p>Специалист в области fullstack-разработки с 2019 года. В настоящее время работаю техником-программистом в <strong>БУЗОО "Медицинский информационно-аналитический центр"</strong> (Омск). Окончил Сибирский профессиональный колледж по специальности 09.02.07 "Информационные системы и программирование".</p>
+                <p>На данный момент являюсь экспертом демонстрационного экзамена по специальности 09.02.07 "Информационные системы и программирование".</p>
 
                 <h3>Технологический стек</h3>
                 <ul className="skills-grid">
@@ -52,8 +58,8 @@ export default function HomeView(){
                     </li>
                 </ul>
                 
-                <h4>Профессиональная философия</h4>
-                <p>Специализируюсь на создании комплексных веб-решений с акцентом на производительность, масштабируемость и соответствие бизнес-требованиям. Постоянно совершенствую экспертизу в области современных web-технологий и архитектурных решений.</p>
+                <h4>Философия</h4>
+                <p>Осуждаю вайбкодеров и изобретающих повторно велосипед.</p>
             </main>
         <Footer />
         </>
