@@ -10,15 +10,15 @@ import { useAppContext } from "../../Application";
 export default function HomeView(){   
     const {setTitle} = useAppContext();
     useEffect(()=>{
-        setTitle("Добро пожаловать!")
+        setTitle("Welcome!")
     }, [setTitle]) 
     return (
         <>
         <Header />
             <main>
-                <p className="mini">Это недоработанный прототип, в скором будущем доработаю.</p>
+                <p className="mini">This is an unfinished prototype, I will complete it soon.</p>
                 
-                <h1>Александр Каурцев: Fullstack Web Developer <div className="row">
+                <h1>Alexander Kaurtsev: Fullstack Web Developer <div className="row">
                         <Link className="target" to="https://kaurcev.t.me">
                             <img alt="Telegram" src={Tg} />
                             <span>Telegram</span>
@@ -28,38 +28,38 @@ export default function HomeView(){
                             <span>GitHub</span>
                         </Link>    
                 </div></h1>
-                <h2>Профессиональный профиль</h2>
+                <h2>Professional Profile</h2>
                 
-                <p>Специалист в области fullstack-разработки с 2019 года. В настоящее время работаю техником-программистом в <strong>БУЗОО "Медицинский информационно-аналитический центр"</strong> (Омск). Окончил Сибирский профессиональный колледж по специальности 09.02.07 "Информационные системы и программирование".</p>
-                <p>На данный момент являюсь экспертом демонстрационного экзамена по специальности 09.02.07 "Информационные системы и программирование".</p>
+                <p>Fullstack development specialist since 2019. Currently working as a programmer technician at <strong>BUZOO "Medical Information and Analytical Center"</strong> (Omsk). Graduated from Siberian Professional College with a degree in 09.02.07 "Information Systems and Programming".</p>
+                <p>Currently serving as an expert for demonstration exams in specialty 09.02.07 "Information Systems and Programming".</p>
 
-                <h3>Технологический стек</h3>
+                <h3>Technology Stack</h3>
                 <ul className="skills-grid">
                     <li>ReactJS</li>
-                    <li>Node.js (экосистема REST)</li>
+                    <li>Node.js (REST ecosystem)</li>
                     <li>PostgreSQL / MySQL</li>
                     <li>C#</li>
                     <li>T-SQL (MS SQL Server)</li>
                     <li>PHP</li>
-                    <li>Git (системы контроля версий)</li>
-                    <li>Адаптивная и семантическая вёрстка</li>
-                    <li>Автоматизация процессов</li>
+                    <li>Git (version control systems)</li>
+                    <li>Responsive and semantic markup</li>
+                    <li>Process automation</li>
                 </ul>
 
-                <h3>Профессиональные достижения</h3>
+                <h3>Professional Achievements</h3>
                 <ul className="achievements">
                     <li>
-                        Призёр национального чемпионата "ПРОФЕССИОНАЛЫ-2023" (компетенция: 
-                        <strong>"Программные решения для бизнеса"</strong>)
+                        Prize winner of the national championship "PROFESSIONALS-2023" (competency: 
+                        <strong>"Business Software Solutions"</strong>)
                     </li>
                     <li>
-                        Призёр национального чемпионата "ПРОФЕССИОНАЛЫ-2024" (компетенция: 
-                        <strong>"Веб-разработка"</strong>)
+                        Prize winner of the national championship "PROFESSIONALS-2024" (competency: 
+                        <strong>"Web Development"</strong>)
                     </li>
                 </ul>
                 
-                <h4>Философия</h4>
-                <p>Осуждаю вайбкодеров и изобретающих повторно велосипед.</p>
+                <h4>Philosophy</h4>
+                <p>I condemn vibe coders and those who reinvent the wheel.</p>
             </main>
         <Footer />
         </>
