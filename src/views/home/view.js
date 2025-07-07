@@ -18,7 +18,7 @@ export default function HomeView(){
             <main>
                 <p className="mini">This is an unfinished prototype, I will complete it soon.</p>
                 
-                <h1>Alexander Kaurtsev: Fullstack Web Developer <div className="row">
+                <h1>Alexsandr Kaurcev: Fullstack Web Developer <div className="row">
                         <Link className="target" to="https://kaurcev.t.me">
                             <img alt="Telegram" src={Tg} />
                             <span>Telegram</span>
