@@ -7,15 +7,15 @@ import { useAppContext } from "../../Application";
 export default function E404View(){    
     const {setTitle} = useAppContext();
     useEffect(()=>{
-        setTitle("Страница не найдена")
+        setTitle("Page not found")
     }, [setTitle])
     return (
         <>
         <Header />
             <main className="centered">
                 <h1>404</h1>
-                <p>Данная страница удалена или не существовала вовсе.</p>
-                <Link to="/">На главную</Link>
+                <p>This page has been removed or never existed.</p>
+                <Link to="/">Home</Link>
             </main>
         <Footer />
         </>
