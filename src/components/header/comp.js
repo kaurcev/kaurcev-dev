@@ -6,7 +6,7 @@ const Header = () => {
             <header>
                 <div className="header">
                     <div className="logo">
-                        <Link to="/">{"//"}kaurcev.dev</Link>
+                        <Link to="/">Александр Каурцев</Link>
                     </div>
                 </div>
             </header>
