@@ -16,7 +16,7 @@ export default function HomeView() {
                 <NavPanel />
                 <div className="page">
                     <h1>Александр Каурцев: Fullstack Web Developer</h1>
-                    <h2>Профессиональный профиль</h2>
+                    <p>Потом</p>
                 </div>
             </main>
             <Footer />

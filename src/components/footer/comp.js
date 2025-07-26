@@ -2,7 +2,7 @@ import { useAppContext } from '../../Application';
 import './style.css';
 
 const Footer = () => {
-    const {version, versionstate} = useAppContext();
+    const { version, versionstate } = useAppContext();
     return (
         <>
             <footer>

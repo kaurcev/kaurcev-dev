@@ -13,13 +13,13 @@ export const AppProvider = ({ children }) => {
   const versionstate = useState(
     pkg.versionstate
   );
-  
-  useEffect(()=>{
+
+  useEffect(() => {
     document.title = `${title} | Александр Каурцев`;
   }, [title]);
 
   return (
-    <AppContext.Provider value={{navigate, setTitle, version, versionstate}}>
+    <AppContext.Provider value={{ navigate, setTitle, version, versionstate }}>
       {children}
     </AppContext.Provider>
   );

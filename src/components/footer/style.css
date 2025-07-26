@@ -1,11 +1,11 @@
-footer{
+footer {
     padding: 10px;
     font-size: 0.8rem;
     color: #949494;
     min-height: 100px;
 }
 
-footer .footer{
+footer .footer {
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;

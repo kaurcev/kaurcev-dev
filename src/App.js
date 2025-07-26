@@ -17,11 +17,10 @@ function App() {
           <Route exact path='/resume' element={<ResumeView />} />
           <Route exact path='/news' element={<NewsView />} />
           <Route exact path='/projects' element={<ProjectsView />} />
-          
           <Route path='*' status="404" element={<E404View />} />
         </Routes>
-      </AppProvider> 
-   </Router>
+      </AppProvider>
+    </Router>
   );
 }
 
